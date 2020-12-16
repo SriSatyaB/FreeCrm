@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="71982" started-at="2020-12-16T18:22:45Z" finished-at="2020-12-16T18:23:57Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.TestRunner@1db0ec27]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="71982" started-at="2020-12-16T18:22:45Z" finished-at="2020-12-16T18:23:57Z">
+      <class name="testRunners.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testRunners.TestRunner@1db0ec27]" name="setUpClass" is-config="true" duration-ms="956" started-at="2020-12-16T18:22:45Z" finished-at="2020-12-16T18:22:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.TestRunner@1db0ec27]" name="runScenario" duration-ms="32567" started-at="2020-12-16T18:22:46Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-12-16T18:23:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To add one or more new calendars"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To test the calendar module"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.TestRunner@1db0ec27]" name="runScenario" duration-ms="12569" started-at="2020-12-16T18:23:19Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-12-16T18:23:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To delete a calendar event"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To test the calendar module"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.TestRunner@1db0ec27]" name="runScenario" duration-ms="12847" started-at="2020-12-16T18:23:31Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-12-16T18:23:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To test the crm Login Functionality for Valid User"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To test the crm application Login"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.TestRunner@1db0ec27]" name="runScenario" duration-ms="11498" started-at="2020-12-16T18:23:44Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-12-16T18:23:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To test the crm Login Functionality for InValid User"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To test the crm application Login"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testRunners.TestRunner@1db0ec27]" name="tearDownClass" is-config="true" duration-ms="1240" started-at="2020-12-16T18:23:56Z" finished-at="2020-12-16T18:23:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testRunners.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

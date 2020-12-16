@@ -1,0 +1,696 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "To login to the app",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 260000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user opens the url",
+            "match": {
+              "location": "com.stepDefinitions.Calendars_Sample.user_opens_the_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2390000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user clicks login btn",
+            "match": {
+              "location": "com.stepDefinitions.Calendars_Sample.user_clicks_login_btn()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 531000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "enters username and password",
+            "match": {
+              "location": "com.stepDefinitions.Calendars_Sample.enters_username_and_password()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 144000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "click submit btn",
+            "match": {
+              "location": "com.stepDefinitions.Calendars_Sample.click_submit_btn()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-16T18:22:46.836Z",
+        "before": [
+          {
+            "result": {
+              "duration": 10139000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.stepDefinitions.Hook.setUp()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "To add one or more new calendars",
+        "description": "",
+        "id": "to-test-the-calendar-module;to-add-one-or-more-new-calendars",
+        "after": [
+          {
+            "result": {
+              "duration": 1508000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.stepDefinitions.Hook.tear(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user logged in the crm application",
+            "match": {
+              "location": "com.stepDefinitions.Calendars_Sample.user_logged_in_the_crm_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1247000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user opens calendar",
+            "match": {
+              "location": "com.stepDefinitions.Calendars_Sample.user_opens_calendar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 260000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user clicks new calendar",
+            "match": {
+              "location": "com.stepDefinitions.Calendars_Sample.user_clicks_new_calendar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15485000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user fills the form with",
+            "match": {
+              "location": "com.stepDefinitions.Calendars_Sample.user_fills_the_form_with(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "title",
+                  "calendar",
+                  "startDate",
+                  "Description",
+                  "Location",
+                  "AllDay",
+                  "category",
+                  "Tags",
+                  "Deals",
+                  "Cases",
+                  "Tasks",
+                  "AlertTime",
+                  "AlertVia",
+                  "ReminderTime",
+                  "AssignedTo",
+                  "Participants",
+                  "Company",
+                  "screenshot"
+                ]
+              },
+              {
+                "cells": [
+                  "abcde",
+                  "cal3.6",
+                  "17/12/2020 20:00",
+                  "This is my first event",
+                  "ca office",
+                  "Yes",
+                  "Important",
+                  "tag1,tag2,tag3",
+                  "deals1",
+                  "cases1",
+                  "task1",
+                  "30 Minutes",
+                  "Email",
+                  "10 minutes",
+                  "Satya Bolloju",
+                  "satya",
+                  "Aagama",
+                  "screenshot1.png"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "click on save btn",
+            "match": {
+              "location": "com.stepDefinitions.Calendars_Sample.click_on_save_btn()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "new calendar event should be saved",
+            "match": {
+              "location": "com.stepDefinitions.Calendars_Sample.new_calendar_event_should_be_saved()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user logouts from the application",
+            "match": {
+              "location": "com.stepDefinitions.Calendars_Sample.user_logouts_from_the_application()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "To login to the app",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user opens the url",
+            "match": {
+              "location": "com.stepDefinitions.Calendars_Sample.user_opens_the_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1707000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user clicks login btn",
+            "match": {
+              "location": "com.stepDefinitions.Calendars_Sample.user_clicks_login_btn()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 418000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "enters username and password",
+            "match": {
+              "location": "com.stepDefinitions.Calendars_Sample.enters_username_and_password()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 117000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "click submit btn",
+            "match": {
+              "location": "com.stepDefinitions.Calendars_Sample.click_submit_btn()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-16T18:23:19.206Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8237000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.stepDefinitions.Hook.setUp()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "To delete a calendar event",
+        "description": "",
+        "id": "to-test-the-calendar-module;to-delete-a-calendar-event",
+        "after": [
+          {
+            "result": {
+              "duration": 2076000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.stepDefinitions.Hook.tear(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user is logged in to the application",
+            "match": {
+              "location": "com.stepDefinitions.Calendars_Sample.user_is_logged_in_to_the_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user click on a Date",
+            "match": {
+              "location": "com.stepDefinitions.Calendars_Sample.user_click_on_a_Date()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "the events created on that date should be displayed",
+            "match": {
+              "location": "com.stepDefinitions.Calendars_Sample.the_events_created_on_that_date_should_be_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user clicks on an event",
+            "match": {
+              "location": "com.stepDefinitions.Calendars_Sample.user_clicks_on_an_event()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "event details are displayed",
+            "match": {
+              "location": "com.stepDefinitions.Calendars_Sample.event_details_are_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "user cliks on delete button",
+            "match": {
+              "location": "com.stepDefinitions.Calendars_Sample.user_cliks_on_delete_button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      }
+    ],
+    "name": "To test the calendar module",
+    "description": "",
+    "id": "to-test-the-calendar-module",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/calendar_sample.feature",
+    "tags": [
+      {
+        "name": "@FunctionalTest",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-12-16T18:23:31.781Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8465000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.stepDefinitions.Hook.setUp()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "To test the crm Login Functionality for Valid User",
+        "description": "",
+        "id": "to-test-the-crm-application-login;to-test-the-crm-login-functionality-for-valid-user;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1305000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.stepDefinitions.Hook.tear(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enters the url",
+            "match": {
+              "location": "com.stepDefinitions.Crm_LoginSteps.user_enters_the_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1614000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user clicks on the login button",
+            "match": {
+              "location": "com.stepDefinitions.Crm_LoginSteps.user_clicks_on_the_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 328000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters \"pdeep.nov20@mail.com\" and \"Satya@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"pdeep.nov20@mail.com\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"Satya@123\"",
+                  "offset": 39
+                }
+              ],
+              "location": "com.stepDefinitions.Crm_LoginSteps.user_enters_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 121000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clicks on the submit button",
+            "match": {
+              "location": "com.stepDefinitions.Crm_LoginSteps.user_clicks_on_the_submit_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user should be launched on the home page",
+            "match": {
+              "location": "com.stepDefinitions.Crm_LoginSteps.user_should_be_launched_on_the_home_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 993000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user verify the username",
+            "match": {
+              "location": "com.stepDefinitions.Crm_LoginSteps.user_verify_the_username()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "logout from the application",
+            "match": {
+              "location": "com.stepDefinitions.Crm_LoginSteps.logout_from_the_application()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "close the browser",
+            "match": {
+              "location": "com.stepDefinitions.Crm_LoginSteps.close_the_browser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-16T18:23:44.646Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7808000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.stepDefinitions.Hook.setUp()"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "To test the crm Login Functionality for InValid User",
+        "description": "",
+        "id": "to-test-the-crm-application-login;to-test-the-crm-login-functionality-for-invalid-user;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1337000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.stepDefinitions.Hook.tear(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user enters the url",
+            "match": {
+              "location": "com.stepDefinitions.Crm_LoginSteps.user_enters_the_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1449000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user clicks on the login button",
+            "match": {
+              "location": "com.stepDefinitions.Crm_LoginSteps.user_clicks_on_the_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 366000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user enters invalid \"sri@gmail.com\" and invalid \"Sri123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sri@gmail.com\"",
+                  "offset": 20
+                },
+                {
+                  "val": "\"Sri123\"",
+                  "offset": 48
+                }
+              ],
+              "location": "com.stepDefinitions.Crm_LoginSteps.user_enters_invalid_and_invalid(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 123000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user clicks on the submit button",
+            "match": {
+              "location": "com.stepDefinitions.Crm_LoginSteps.user_clicks_on_the_submit_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 388000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "invalid credentials message is displayed",
+            "match": {
+              "location": "com.stepDefinitions.Crm_LoginSteps.invalid_credentials_message_is_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "close the browser",
+            "match": {
+              "location": "com.stepDefinitions.Crm_LoginSteps.close_the_browser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      }
+    ],
+    "name": "To test the crm application Login",
+    "description": "",
+    "id": "to-test-the-crm-application-login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/crm_login.feature",
+    "tags": [
+      {
+        "name": "@FunctionalTest",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

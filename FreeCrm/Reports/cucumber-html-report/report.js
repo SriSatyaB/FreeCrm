@@ -147,130 +147,6 @@ formatter.result({
 formatter.after({
   "status": "passed"
 });
-formatter.background({
-  "name": "To login to the app",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user opens the url",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.stepDefinitions.Calendars_Sample.user_opens_the_url()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user clicks login btn",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.stepDefinitions.Calendars_Sample.user_clicks_login_btn()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "enters username and password",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.stepDefinitions.Calendars_Sample.enters_username_and_password()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "click submit btn",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.stepDefinitions.Calendars_Sample.click_submit_btn()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "To delete a calendar event",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@FunctionalTest"
-    },
-    {
-      "name": "@RegressionTest"
-    }
-  ]
-});
-formatter.step({
-  "name": "user is logged in to the application",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.stepDefinitions.Calendars_Sample.user_is_logged_in_to_the_application()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click on a Date",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.stepDefinitions.Calendars_Sample.user_click_on_a_Date()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the events created on that date should be displayed",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.stepDefinitions.Calendars_Sample.the_events_created_on_that_date_should_be_displayed()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user clicks on an event",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.stepDefinitions.Calendars_Sample.user_clicks_on_an_event()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "event details are displayed",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.stepDefinitions.Calendars_Sample.event_details_are_displayed()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user cliks on delete button",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.stepDefinitions.Calendars_Sample.user_cliks_on_delete_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
 formatter.uri("file:src/test/resources/Features/crm_login.feature");
 formatter.feature({
   "name": "To test the crm application Login",
@@ -567,6 +443,132 @@ formatter.step({
 });
 formatter.match({
   "location": "com.stepDefinitions.Crm_LoginSteps.close_the_browser()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.uri("file:src/test/resources/Features/deals.feature");
+formatter.feature({
+  "name": "To test the deals module",
+  "description": "",
+  "keyword": "Feature",
+  "tags": [
+    {
+      "name": "@FunctionalTest"
+    }
+  ]
+});
+formatter.background({
+  "name": "To login to the app",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user opens the url",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.stepDefinitions.Calendars_Sample.user_opens_the_url()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user clicks login btn",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.stepDefinitions.Calendars_Sample.user_clicks_login_btn()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "enters username and password",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.stepDefinitions.Calendars_Sample.enters_username_and_password()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "click submit btn",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.stepDefinitions.Calendars_Sample.click_submit_btn()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "To create a new Deal",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@FunctionalTest"
+    }
+  ]
+});
+formatter.step({
+  "name": "user is on the homePage",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.stepDefinitions.Crm_DealsSteps.user_is_on_the_homePage()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user clicks on the New Btn",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.stepDefinitions.Crm_DealsSteps.user_clicks_on_the_New_Btn()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user fills the Deal details",
+  "rows": [
+    {},
+    {}
+  ],
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.stepDefinitions.Crm_DealsSteps.user_fills_the_Deal_details(io.cucumber.datatable.DataTable)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user clicks on save Btn",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.stepDefinitions.Crm_DealsSteps.user_clicks_on_save_Btn()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "a new deal is created",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.stepDefinitions.Crm_DealsSteps.a_new_deal_is_created()"
 });
 formatter.result({
   "status": "passed"

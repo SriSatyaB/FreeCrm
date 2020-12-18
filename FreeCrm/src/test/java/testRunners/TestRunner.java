@@ -1,6 +1,11 @@
 package testRunners;
 
-import org.junit.runner.RunWith;
+
+//import org.junit.runner.RunWith;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
 
 import com.vimalselvam.cucumber.listener.Reporter;
 
@@ -9,6 +14,8 @@ import com.vimalselvam.cucumber.listener.Reporter;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
+//import io.cucumber.testng.PickleWrapper;
+//import io.cucumber.testng.TestNGCucumberRunner;
 
 //@RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources/Features", plugin = { "pretty",
@@ -18,7 +25,7 @@ import io.cucumber.testng.CucumberOptions;
 		// "testng:target/testng-cucumber-reports/cuketestng.xml",
 }, dryRun = false, // if true tests cases will not run
 		strict = true, monochrome = true, // for better console output
-		glue = { "com.stepDefinitions" },tags= {"@FunctionalTest"}
+		glue = { "com.stepDefinitions" }
 
 //tags = {"@SmokeTest","@RegressionTest"}---ANDing
 //tags = {"@SmokeTest , @RegressionTest"} ---- ORing
@@ -37,5 +44,7 @@ public class TestRunner extends AbstractTestNGCucumberTests{
 		Reporter.setSystemInfo("os", "Windows");
 		Reporter.setTestRunnerOutput("Project Natural Report");
 	}
+	
+	
 
 }

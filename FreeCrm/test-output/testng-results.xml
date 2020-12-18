@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="2" ignored="0" total="4" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="71982" started-at="2020-12-16T18:22:45Z" finished-at="2020-12-16T18:23:57Z">
+  <suite name="Default suite" duration-ms="107207" started-at="2020-12-17T15:54:09 PST" finished-at="2020-12-17T15:55:56 PST">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.TestRunner@1db0ec27]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.TestRunner@72a7c7e0]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="71982" started-at="2020-12-16T18:22:45Z" finished-at="2020-12-16T18:23:57Z">
+    <test name="Default test" duration-ms="107207" started-at="2020-12-17T15:54:09 PST" finished-at="2020-12-17T15:55:56 PST">
       <class name="testRunners.TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testRunners.TestRunner@1db0ec27]" name="setUpClass" is-config="true" duration-ms="956" started-at="2020-12-16T18:22:45Z" finished-at="2020-12-16T18:22:46Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testRunners.TestRunner@72a7c7e0]" name="setUpClass" is-config="true" duration-ms="352" started-at="2020-12-17T15:54:09 PST" finished-at="2020-12-17T15:54:09 PST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.TestRunner@1db0ec27]" name="runScenario" duration-ms="32567" started-at="2020-12-16T18:22:46Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-12-16T18:23:18Z">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.TestRunner@72a7c7e0]" name="runScenario" duration-ms="39556" started-at="2020-12-17T15:54:09 PST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-12-17T15:54:49 PST">
           <params>
             <param index="0">
               <value>
@@ -27,26 +27,52 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[timeout: Timed out receiving message from renderer: 30.000
+  (Session info: chrome=87.0.4280.88)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PRADEEP-PC', ip: '192.168.214.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Pradeep\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57471}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 1a728e2d0f87551f34f55a13a4a93c56]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 30.000
+  (Session info: chrome=87.0.4280.88)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PRADEEP-PC', ip: '192.168.214.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Pradeep\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57471}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 1a728e2d0f87551f34f55a13a4a93c56
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy21.click(Unknown Source)
+at com.pages.Crm_LoginPage.clickOnLoginBtn(Crm_LoginPage.java:34)
+at com.stepDefinitions.Calendars_Sample.user_clicks_login_btn(Calendars_Sample.java:32)
+at ✽.user clicks login btn(file:///C:/Users/Pradeep/git/FreeCrm/FreeCrm/src/test/resources/Features/calendar_sample.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.TestRunner@1db0ec27]" name="runScenario" duration-ms="12569" started-at="2020-12-16T18:23:19Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-12-16T18:23:31Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["To delete a calendar event"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["To test the calendar module"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.TestRunner@1db0ec27]" name="runScenario" duration-ms="12847" started-at="2020-12-16T18:23:31Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-12-16T18:23:44Z">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.TestRunner@72a7c7e0]" name="runScenario" duration-ms="11353" started-at="2020-12-17T15:54:49 PST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-12-17T15:55:00 PST">
           <params>
             <param index="0">
               <value>
@@ -62,7 +88,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.TestRunner@1db0ec27]" name="runScenario" duration-ms="11498" started-at="2020-12-16T18:23:44Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-12-16T18:23:56Z">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.TestRunner@72a7c7e0]" name="runScenario" duration-ms="12397" started-at="2020-12-17T15:55:00 PST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-12-17T15:55:13 PST">
           <params>
             <param index="0">
               <value>
@@ -78,7 +104,68 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testRunners.TestRunner@1db0ec27]" name="tearDownClass" is-config="true" duration-ms="1240" started-at="2020-12-16T18:23:56Z" finished-at="2020-12-16T18:23:57Z">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.TestRunner@72a7c7e0]" name="runScenario" duration-ms="42613" started-at="2020-12-17T15:55:13 PST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-12-17T15:55:55 PST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To create a new Deal"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To test the deals module"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='title']"}
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PRADEEP-PC', ip: '192.168.214.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Pradeep\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57632}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 40bc9a499359f983873dda0dcf8e7331
+*** Element info: {Using=xpath, value=//input[@name='title']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='title']"}
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PRADEEP-PC', ip: '192.168.214.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Pradeep\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57632}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 40bc9a499359f983873dda0dcf8e7331
+*** Element info: {Using=xpath, value=//input[@name='title']}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy21.sendKeys(Unknown Source)
+at com.pages.Crm_DealsPage.enterTitle(Crm_DealsPage.java:48)
+at com.stepDefinitions.Crm_DealsSteps.user_fills_the_Deal_details(Crm_DealsSteps.java:31)
+at ✽.user fills the Deal details(file:///C:/Users/Pradeep/git/FreeCrm/FreeCrm/src/test/resources/Features/deals.feature:12)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testRunners.TestRunner@72a7c7e0]" name="tearDownClass" is-config="true" duration-ms="710" started-at="2020-12-17T15:55:55 PST" finished-at="2020-12-17T15:55:56 PST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

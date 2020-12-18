@@ -11,6 +11,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
 import com.baseClasses.Library;
+import com.google.common.io.Files;
 import com.pages.Crm_LoginPage;
 import com.reusableFunctions.SeleniumUtilities;
 import com.vimalselvam.cucumber.listener.Reporter;
@@ -27,10 +28,16 @@ public class Hook extends Library{
 	}
 	@After 
 	public void tear(Scenario scenario) throws IOException {
-		String name = scenario.getName();
 		
+		String screenshotName = scenario.getName().replaceAll(" ", "_");
+//		File sourcePath = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+//		 
+//		 
+//		 File destinationPath = new File("/FreeCrm/Reports/cucumber-html-report/screenshots/" + screenshotName + ".png");
+//		 Files.copy(sourcePath, destinationPath);
+//		 Reporter.addScreenCaptureFromPath(destinationPath.toString());
 	SeleniumUtilities su = new SeleniumUtilities(driver);
-	su.to_take_screenshot("src/test/resources/Screenshots/"+name+"/"+"sc1.png");
+	su.to_take_screenshot("src/test/resources/Screenshots/"+screenshotName+".png");
 	//Reporter.addScreenCaptureFromPath(source.getAbsolutePath());
 	tearDown();
 	}

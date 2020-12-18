@@ -2,12 +2,14 @@ package com.reusableFunctions;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -38,9 +40,14 @@ public class SeleniumUtilities extends Library{
 		wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath(Locator))));
 		
 	}
-	public void selectTextfromDropDown(String dropDown,String ddText) {
-		Select dd = new Select(driver.findElement(By.id(dropDown)));
-		dd.selectByVisibleText(ddText);
+	
+	
+	public void selectTextFromDiVDropDown(List<WebElement> list,String text) {
+		for (WebElement ele : list) {
+			if(ele.getText().equals(text))
+				ele.click();
+			break;
+		}
 	}
 	
 	

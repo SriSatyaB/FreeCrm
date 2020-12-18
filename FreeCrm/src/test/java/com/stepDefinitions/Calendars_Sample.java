@@ -3,8 +3,9 @@ package com.stepDefinitions;
 import java.util.List;
 import java.util.Map;
 
-import org.junit.Assert;
+//import org.junit.Assert;
 import org.openqa.selenium.JavascriptExecutor;
+import org.testng.Assert;
 
 import com.baseClasses.Library;
 import com.pages.Crm_CalendarPage;
@@ -81,7 +82,7 @@ public class Calendars_Sample extends Library {
 			cp1.selectAlertTime(data.get("AlertTime"));
 			cp1.clickOnSaveBtn();
 			String tt = cp1.getEventTitle();
-			Assert.assertEquals("There is a problem occured in creating new Event",data.get("title"),tt);
+			Assert.assertEquals(tt,data.get("title"));
 			Thread.sleep(1000);
 			cp1.clickOnCalIcon();
 			Thread.sleep(1000);
@@ -113,6 +114,7 @@ public class Calendars_Sample extends Library {
 
 	@When("user click on a Date")
 	public void user_click_on_a_Date() {
+	    cp1.clickOnCalIcon();
 	    
 	}
 

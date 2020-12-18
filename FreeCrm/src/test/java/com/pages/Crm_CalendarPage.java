@@ -85,6 +85,10 @@ public class Crm_CalendarPage {
 	WebElement caseSearch;
 	@FindBy(xpath = "//div[@class='field'][1]/div/div/span/p")
 	WebElement finalTitle;
+	
+	
+	@FindBy(xpath="//button/span[text()='Day']")
+	WebElement dateBtn;
 
 	public Crm_CalendarPage(WebDriver driver) {
 		this.driver = driver;

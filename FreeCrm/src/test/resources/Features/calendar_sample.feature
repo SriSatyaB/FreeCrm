@@ -19,14 +19,14 @@ Scenario: To add one or more new calendars
 	Then new calendar event should be saved 
 	Then user logouts from the application 
 	
-@RegressionTest
-Scenario: To delete a calendar event
-	Given user is logged in to the application
-	When user click on a Date
-	Then the events created on that date should be displayed
-	When user clicks on an event
-	Then event details are displayed
-	Then user cliks on delete button
+#@RegressionTest
+#Scenario: To delete a calendar event
+#	Given user is logged in to the application
+#	When user click on a Date
+#	Then the events created on that date should be displayed
+#	When user clicks on an event
+#	Then event details are displayed
+#	Then user cliks on delete button
 	
 	
 	

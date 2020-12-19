@@ -44,6 +44,7 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
@@ -53,7 +54,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Dec 17, 2020 04:31:53 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Dec 19, 2020 07:45:29 AM</span>
 			</a>
 		</ul>
 	</div>
@@ -69,6 +70,8 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+					<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -123,10 +126,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>3</span> feature(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='66.667%'><span class='strong'>2</span> feature(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
+                    <span class='strong tooltipped' data-position='top' data-tooltip='33.333%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
                 </div>
             </div>
         </div>
@@ -137,10 +140,10 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>4</span> scenario(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='75%'><span class='strong'>3</span> scenario(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='25%'>1</span> scenario(s) failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
@@ -153,12 +156,12 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>34</span> step(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='77.778%'><span class='strong'>28</span> step(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='5.556%'>2</span> scenario(s) failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='16.667%'>6</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='16.667%'>0</span> others
                 </div>
             </div>
         </div>
@@ -179,7 +182,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>To test the calendar module</span>
-						<span class='test-time'>Dec 17, 2020 04:32:02 PM</span>
+						<span class='test-time'>Dec 19, 2020 07:45:39 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -194,7 +197,7 @@
 		<span class='category label'>@FunctionalTest</span>
 		<span class='category label'>@SmokeTest</span>
 	</div>
-	<span class='duration right label'>0h 0m 19s+461ms</span>
+	<span class='duration right label'>0h 0m 23s+199ms</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: To add one or more new calendars</div>
 	</div>
@@ -247,11 +250,11 @@
 </div>
 					</div>
 				</li>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='16'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='16'>
 					<div class='test-heading'>
 						<span class='test-name'>To test the crm application Login</span>
-						<span class='test-time'>Dec 17, 2020 04:32:31 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-time'>Dec 19, 2020 07:46:11 AM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -264,7 +267,7 @@
 	<div class='category-list'>
 		<span class='category label'>@SmokeTest</span>
 	</div>
-	<span class='duration right label'>0h 0m 2s+764ms</span>
+	<span class='duration right label'>0h 0m 3s+884ms</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: To test the crm Login Functionality for Valid User</div>
 		<table class='runtime-table table-striped table'><tr><td>email</td><td>password</td></tr><tr><td>pdeep.nov20@mail.com</td><td>Satya@123</td></tr></table>
@@ -309,42 +312,151 @@
 		</li>
 	</ul>
 </div>
-<div class='scenario outline node' test-id='29' status='pass'>
+<div class='scenario outline node' test-id='29' status='fail'>
 	<div class='category-list'>
 		<span class='category label'>@RegressionTest</span>
 	</div>
-	<span class='duration right label'>0h 0m 1s+977ms</span>
+	<span class='duration right label'>0h 10m 3s+518ms</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: To test the crm Login Functionality for InValid User</div>
+		<div class="scenario-name"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span> Scenario Outline: To test the crm Login Functionality for InValid User</div>
 		<table class='runtime-table table-striped table'><tr><td>email</td><td>password</td></tr><tr><td>sri@gmail.com</td><td>Sri123</td></tr></table>
 	</div>
 	<ul class='steps'>
-		<li test-id='30' class='node scenario pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>To test the crm Login Functionality for InValid User</div>
+		<li test-id='30' class='node scenario fail' status='fail'>
+			<div class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>To test the crm Login Functionality for InValid User</div>
 			<ul class='gc steps'>
-				<li test-id='32' class='gc given pass' status='pass'>
-					<h6 class="step-name" title="com.stepDefinitions.Crm_LoginSteps.user_enters_the_url()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given user enters the url</h6>
-					<div class="node-step"></div>
+				<li test-id='31' class='gc * fail' status='fail'>
+					<h6 class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>com.stepDefinitions.Hook.setUp()</h6>
+					<textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: session not created
+from timeout: Timed out receiving message from renderer: 600.000
+  (Session info: chrome=87.0.4280.88)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PRADEEP-PC', ip: '192.168.214.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00B4C0C3+3326147]
+	Ordinal0 [0x00A30851+2164817]
+	Ordinal0 [0x008B7298+619160]
+	Ordinal0 [0x008AB17F+569727]
+	Ordinal0 [0x008AA421+566305]
+	Ordinal0 [0x008AA815+567317]
+	Ordinal0 [0x008AA135+565557]
+	Ordinal0 [0x008B38B1+604337]
+	Ordinal0 [0x008AA0F1+565489]
+	Ordinal0 [0x008AAEA2+568994]
+	Ordinal0 [0x008AA421+566305]
+	Ordinal0 [0x008AA815+567317]
+	Ordinal0 [0x008AA135+565557]
+	Ordinal0 [0x008B1D2C+597292]
+	Ordinal0 [0x008AA0F1+565489]
+	Ordinal0 [0x008AAEA2+568994]
+	Ordinal0 [0x008AA421+566305]
+	Ordinal0 [0x008AA815+567317]
+	Ordinal0 [0x008AA135+565557]
+	Ordinal0 [0x008AFE62+589410]
+	Ordinal0 [0x008AA0F1+565489]
+	Ordinal0 [0x008AAEA2+568994]
+	Ordinal0 [0x008AA421+566305]
+	Ordinal0 [0x008AA815+567317]
+	Ordinal0 [0x008AA135+565557]
+	Ordinal0 [0x008AF075+585845]
+	Ordinal0 [0x008AA0F1+565489]
+	Ordinal0 [0x008AAEA2+568994]
+	Ordinal0 [0x008AA421+566305]
+	Ordinal0 [0x008AA815+567317]
+	Ordinal0 [0x008AA135+565557]
+	Ordinal0 [0x008A6776+550774]
+	Ordinal0 [0x008AA0F1+565489]
+	Ordinal0 [0x008A9F13+565011]
+	Ordinal0 [0x008A9D07+564487]
+	Ordinal0 [0x008B82C0+623296]
+	Ordinal0 [0x00856BDD+224221]
+	Ordinal0 [0x00855CAC+220332]
+	Ordinal0 [0x0085189B+202907]
+	Ordinal0 [0x00833DF4+81396]
+	Ordinal0 [0x00834DEE+85486]
+	Ordinal0 [0x00834D79+85369]
+	Ordinal0 [0x00A485DC+2262492]
+	GetHandleVerifier [0x00CD2874+1487204]
+	GetHandleVerifier [0x00CD23CD+1486013]
+	GetHandleVerifier [0x00CDA368+1518680]
+	GetHandleVerifier [0x00CD2F4E+1488958]
+	Ordinal0 [0x00A3ED0D+2223373]
+	Ordinal0 [0x00A4A12B+2269483]
+	Ordinal0 [0x00A4A26F+2269807]
+	Ordinal0 [0x00A5ECB8+2354360]
+	BaseThreadInitThunk [0x75C6FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77A575F4+228]
+	RtlGetAppContainerNamedObjectPath [0x77A575C4+180]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at com.baseClasses.Library.browserSetUp(Library.java:53)
+	at com.stepDefinitions.Hook.setUp(Hook.java:27)
+</textarea>
 				</li>
-				<li test-id='33' class='gc then pass' status='pass'>
-					<h6 class="step-name" title="com.stepDefinitions.Crm_LoginSteps.user_clicks_on_the_login_button()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then user clicks on the login button</h6>
-					<div class="node-step"></div>
+				<li test-id='32' class='gc given skip' status='skip'>
+					<h6 class="step-name" title="com.stepDefinitions.Crm_LoginSteps.user_enters_the_url()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Given user enters the url</h6>
+					<div class="node-step">Step skipped</div>
 				</li>
-				<li test-id='34' class='gc when pass' status='pass'>
-					<h6 class="step-name" title="com.stepDefinitions.Crm_LoginSteps.user_enters_invalid_and_invalid(java.lang.String,java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When user enters invalid "sri@gmail.com" and invalid "Sri123"</h6>
-					<div class="node-step"></div>
+				<li test-id='33' class='gc then skip' status='skip'>
+					<h6 class="step-name" title="com.stepDefinitions.Crm_LoginSteps.user_clicks_on_the_login_button()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Then user clicks on the login button</h6>
+					<div class="node-step">Step skipped</div>
 				</li>
-				<li test-id='35' class='gc then pass' status='pass'>
-					<h6 class="step-name" title="com.stepDefinitions.Crm_LoginSteps.user_clicks_on_the_submit_button()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then user clicks on the submit button</h6>
-					<div class="node-step"></div>
+				<li test-id='34' class='gc when skip' status='skip'>
+					<h6 class="step-name" title="com.stepDefinitions.Crm_LoginSteps.user_enters_invalid_and_invalid(java.lang.String,java.lang.String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When user enters invalid "sri@gmail.com" and invalid "Sri123"</h6>
+					<div class="node-step">Step skipped</div>
 				</li>
-				<li test-id='36' class='gc then pass' status='pass'>
-					<h6 class="step-name" title="com.stepDefinitions.Crm_LoginSteps.invalid_credentials_message_is_displayed()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then invalid credentials message is displayed</h6>
-					<div class="node-step"></div>
+				<li test-id='35' class='gc then skip' status='skip'>
+					<h6 class="step-name" title="com.stepDefinitions.Crm_LoginSteps.user_clicks_on_the_submit_button()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Then user clicks on the submit button</h6>
+					<div class="node-step">Step skipped</div>
 				</li>
-				<li test-id='37' class='gc then pass' status='pass'>
-					<h6 class="step-name" title="com.stepDefinitions.Crm_LoginSteps.close_the_browser()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then close the browser</h6>
-					<div class="node-step"></div>
+				<li test-id='36' class='gc then skip' status='skip'>
+					<h6 class="step-name" title="com.stepDefinitions.Crm_LoginSteps.invalid_credentials_message_is_displayed()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Then invalid credentials message is displayed</h6>
+					<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='37' class='gc then skip' status='skip'>
+					<h6 class="step-name" title="com.stepDefinitions.Crm_LoginSteps.close_the_browser()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Then close the browser</h6>
+					<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='38' class='gc * fail' status='fail'>
+					<h6 class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>com.stepDefinitions.Hook.tear(io.cucumber.java.Scenario)</h6>
+					<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PRADEEP-PC', ip: '192.168.214.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at com.reusableFunctions.SeleniumUtilities.to_take_screenshot(SeleniumUtilities.java:26)
+	at com.stepDefinitions.Hook.tear(Hook.java:40)
+</textarea>
 				</li>
 			</ul>
 		</li>
@@ -355,7 +467,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='39'>
 					<div class='test-heading'>
 						<span class='test-name'>To test the deals module</span>
-						<span class='test-time'>Dec 17, 2020 04:32:52 PM</span>
+						<span class='test-time'>Dec 19, 2020 07:56:28 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -369,7 +481,7 @@
 	<div class='category-list'>
 		<span class='category label'>@FunctionalTest</span>
 	</div>
-	<span class='duration right label'>0h 0m 3s+910ms</span>
+	<span class='duration right label'>0h 0m 4s+559ms</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: To create a new Deal</div>
 	</div>
@@ -456,13 +568,14 @@
 					<div class='category-heading'>
 						<span class='category-name'>@FunctionalTest</span>
 						<span class='category-status right'>
-						<span class='label pass'>4</span>
+						<span class='label pass'>3</span>
+						<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 4</span>
-							
+							<span status="pass" class='label green accent-4 white-text'>Passed: 3</span>
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -476,37 +589,37 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Dec 17, 2020 04:32:02 PM</td>
+										<td>Dec 19, 2020 07:45:39 AM</td>
 										<td class='linked' test-id='1'>To test the calendar module</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Dec 17, 2020 04:32:02 PM</td>
+										<td>Dec 19, 2020 07:45:39 AM</td>
 										<td class='linked' test-id='2'>To add one or more new calendars</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Dec 17, 2020 04:32:31 PM</td>
+										<td>Dec 19, 2020 07:46:11 AM</td>
 										<td class='linked' test-id='16'>To test the crm application Login</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Dec 17, 2020 04:32:31 PM</td>
+										<td>Dec 19, 2020 07:46:11 AM</td>
 										<td class='linked' test-id='18'>To test the crm Login Functionality for Valid User</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Dec 17, 2020 04:32:42 PM</td>
+										<td>Dec 19, 2020 07:46:16 AM</td>
 										<td class='linked' test-id='30'>To test the crm Login Functionality for InValid User</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Dec 17, 2020 04:32:52 PM</td>
+										<td>Dec 19, 2020 07:56:28 AM</td>
 										<td class='linked' test-id='39'>To test the deals module</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Dec 17, 2020 04:32:52 PM</td>
+										<td>Dec 19, 2020 07:56:28 AM</td>
 										<td class='linked' test-id='40'>To create a new Deal</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -539,17 +652,17 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Dec 17, 2020 04:32:02 PM</td>
+										<td>Dec 19, 2020 07:45:39 AM</td>
 										<td class='linked' test-id='2'>To add one or more new calendars</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Dec 17, 2020 04:32:31 PM</td>
+										<td>Dec 19, 2020 07:46:11 AM</td>
 										<td class='linked' test-id='17'>To test the crm Login Functionality for Valid User</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Dec 17, 2020 04:32:31 PM</td>
+										<td>Dec 19, 2020 07:46:11 AM</td>
 										<td class='linked' test-id='18'>To test the crm Login Functionality for Valid User</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -562,13 +675,13 @@
 					<div class='category-heading'>
 						<span class='category-name'>@RegressionTest</span>
 						<span class='category-status right'>
-						<span class='label pass'>2</span>
+						<span class='label fail'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
 							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 2</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -582,14 +695,14 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Dec 17, 2020 04:32:42 PM</td>
+										<td>Dec 19, 2020 07:46:16 AM</td>
 										<td class='linked' test-id='29'>To test the crm Login Functionality for InValid User</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Dec 17, 2020 04:32:42 PM</td>
+										<td>Dec 19, 2020 07:46:16 AM</td>
 										<td class='linked' test-id='30'>To test the crm Login Functionality for InValid User</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -605,7 +718,191 @@
 		</div>
 	</div>
 </div>
-<!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
+<!-- category view --><div id='exception-view' class='view hide'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='exception-collection' class='exception-collection'>
+				<li class='exception displayed active'>
+					<div class='exception-heading'>
+						<span class='exception-name'>org.openqa.selenium.SessionNotCreatedException</span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+					</div>
+					<div class='exception-content hide'>
+						<div class='exception-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Dec 19, 2020 07:46:16 AM</td>
+										<td class='linked' test-id='31'>com.stepDefinitions.Hook.setUp()</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: session not created
+from timeout: Timed out receiving message from renderer: 600.000
+  (Session info: chrome=87.0.4280.88)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PRADEEP-PC', ip: '192.168.214.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00B4C0C3+3326147]
+	Ordinal0 [0x00A30851+2164817]
+	Ordinal0 [0x008B7298+619160]
+	Ordinal0 [0x008AB17F+569727]
+	Ordinal0 [0x008AA421+566305]
+	Ordinal0 [0x008AA815+567317]
+	Ordinal0 [0x008AA135+565557]
+	Ordinal0 [0x008B38B1+604337]
+	Ordinal0 [0x008AA0F1+565489]
+	Ordinal0 [0x008AAEA2+568994]
+	Ordinal0 [0x008AA421+566305]
+	Ordinal0 [0x008AA815+567317]
+	Ordinal0 [0x008AA135+565557]
+	Ordinal0 [0x008B1D2C+597292]
+	Ordinal0 [0x008AA0F1+565489]
+	Ordinal0 [0x008AAEA2+568994]
+	Ordinal0 [0x008AA421+566305]
+	Ordinal0 [0x008AA815+567317]
+	Ordinal0 [0x008AA135+565557]
+	Ordinal0 [0x008AFE62+589410]
+	Ordinal0 [0x008AA0F1+565489]
+	Ordinal0 [0x008AAEA2+568994]
+	Ordinal0 [0x008AA421+566305]
+	Ordinal0 [0x008AA815+567317]
+	Ordinal0 [0x008AA135+565557]
+	Ordinal0 [0x008AF075+585845]
+	Ordinal0 [0x008AA0F1+565489]
+	Ordinal0 [0x008AAEA2+568994]
+	Ordinal0 [0x008AA421+566305]
+	Ordinal0 [0x008AA815+567317]
+	Ordinal0 [0x008AA135+565557]
+	Ordinal0 [0x008A6776+550774]
+	Ordinal0 [0x008AA0F1+565489]
+	Ordinal0 [0x008A9F13+565011]
+	Ordinal0 [0x008A9D07+564487]
+	Ordinal0 [0x008B82C0+623296]
+	Ordinal0 [0x00856BDD+224221]
+	Ordinal0 [0x00855CAC+220332]
+	Ordinal0 [0x0085189B+202907]
+	Ordinal0 [0x00833DF4+81396]
+	Ordinal0 [0x00834DEE+85486]
+	Ordinal0 [0x00834D79+85369]
+	Ordinal0 [0x00A485DC+2262492]
+	GetHandleVerifier [0x00CD2874+1487204]
+	GetHandleVerifier [0x00CD23CD+1486013]
+	GetHandleVerifier [0x00CDA368+1518680]
+	GetHandleVerifier [0x00CD2F4E+1488958]
+	Ordinal0 [0x00A3ED0D+2223373]
+	Ordinal0 [0x00A4A12B+2269483]
+	Ordinal0 [0x00A4A26F+2269807]
+	Ordinal0 [0x00A5ECB8+2354360]
+	BaseThreadInitThunk [0x75C6FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77A575F4+228]
+	RtlGetAppContainerNamedObjectPath [0x77A575C4+180]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at com.baseClasses.Library.browserSetUp(Library.java:53)
+	at com.stepDefinitions.Hook.setUp(Hook.java:27)
+</textarea>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='exception displayed active'>
+					<div class='exception-heading'>
+						<span class='exception-name'>org.openqa.selenium.NoSuchSessionException</span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+					</div>
+					<div class='exception-content hide'>
+						<div class='exception-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Dec 19, 2020 07:56:20 AM</td>
+										<td class='linked' test-id='38'>com.stepDefinitions.Hook.tear(io.cucumber.java.Scenario)</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PRADEEP-PC', ip: '192.168.214.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at com.reusableFunctions.SeleniumUtilities.to_take_screenshot(SeleniumUtilities.java:26)
+	at com.stepDefinitions.Hook.tear(Hook.java:40)
+</textarea>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='exception-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- exception view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -625,25 +922,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>34</div>
+					<div class='panel-lead'>36</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Dec 17, 2020 04:31:53 PM</div>
+					<div class='panel-lead'>Dec 19, 2020 07:45:29 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Dec 17, 2020 04:32:58 PM</div>
+			 		<div class='panel-lead'>Dec 19, 2020 07:56:34 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 1m 4s+683ms</div>
+					<div class='panel-lead'>0h 11m 4s+855ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -660,11 +957,11 @@
 						</tr>
 						<tr>
 							<td>@FunctionalTest</td>
-							<td>4</td>
-							<td>0</td>
+							<td>3</td>
+							<td>1</td>
 							<td>0</td>
 							<td>
-									57.143%
+									42.857%
 							</td>
 						</tr>
 						<tr>
@@ -678,11 +975,11 @@
 						</tr>
 						<tr>
 							<td>@RegressionTest</td>
+							<td>0</td>
 							<td>2</td>
 							<td>0</td>
-							<td>0</td>
 							<td>
-									100%
+									0%
 							</td>
 						</tr>
 					</table>
@@ -697,38 +994,38 @@
 		<script>
 			var statusGroup = {
                 parentCount: 3,
-				passParent: 3,
-				failParent: 0,
+				passParent: 2,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 1,
 				childCount: 4,
-				passChild: 4,
-				failChild: 0,
+				passChild: 3,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
 				debugChild: 0,
-				exceptionsChild: 0,
-				grandChildCount: 34,
-				passGrandChild: 34,
-				failGrandChild: 0,
+				exceptionsChild: 1,
+				grandChildCount: 36,
+				passGrandChild: 28,
+				failGrandChild: 2,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 0,
+				skipGrandChild: 6,
 				infoGrandChild: 0,
 				debugGrandChild: 0,
-				exceptionsGrandChild: 0,
+				exceptionsGrandChild: 8,
 			};
 		</script>
 		<script>
 			var timeline = {
-			        "To test the calendar module":19.461,"To test the crm application Login":13.335,"To test the deals module":3.91
+			        "To test the calendar module":23.199,"To test the crm application Login":608.6,"To test the deals module":4.559
 			};
 		</script>
 	

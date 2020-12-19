@@ -385,7 +385,8 @@ formatter.scenario({
   ]
 });
 formatter.before({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.SessionNotCreatedException: session not created\nfrom timeout: Timed out receiving message from renderer: 600.000\n  (Session info: chrome\u003d87.0.4280.88)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027PRADEEP-PC\u0027, ip: \u0027192.168.214.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_271\u0027\nDriver info: driver.version: ChromeDriver\nremote stacktrace: Backtrace:\n\tOrdinal0 [0x00B4C0C3+3326147]\n\tOrdinal0 [0x00A30851+2164817]\n\tOrdinal0 [0x008B7298+619160]\n\tOrdinal0 [0x008AB17F+569727]\n\tOrdinal0 [0x008AA421+566305]\n\tOrdinal0 [0x008AA815+567317]\n\tOrdinal0 [0x008AA135+565557]\n\tOrdinal0 [0x008B38B1+604337]\n\tOrdinal0 [0x008AA0F1+565489]\n\tOrdinal0 [0x008AAEA2+568994]\n\tOrdinal0 [0x008AA421+566305]\n\tOrdinal0 [0x008AA815+567317]\n\tOrdinal0 [0x008AA135+565557]\n\tOrdinal0 [0x008B1D2C+597292]\n\tOrdinal0 [0x008AA0F1+565489]\n\tOrdinal0 [0x008AAEA2+568994]\n\tOrdinal0 [0x008AA421+566305]\n\tOrdinal0 [0x008AA815+567317]\n\tOrdinal0 [0x008AA135+565557]\n\tOrdinal0 [0x008AFE62+589410]\n\tOrdinal0 [0x008AA0F1+565489]\n\tOrdinal0 [0x008AAEA2+568994]\n\tOrdinal0 [0x008AA421+566305]\n\tOrdinal0 [0x008AA815+567317]\n\tOrdinal0 [0x008AA135+565557]\n\tOrdinal0 [0x008AF075+585845]\n\tOrdinal0 [0x008AA0F1+565489]\n\tOrdinal0 [0x008AAEA2+568994]\n\tOrdinal0 [0x008AA421+566305]\n\tOrdinal0 [0x008AA815+567317]\n\tOrdinal0 [0x008AA135+565557]\n\tOrdinal0 [0x008A6776+550774]\n\tOrdinal0 [0x008AA0F1+565489]\n\tOrdinal0 [0x008A9F13+565011]\n\tOrdinal0 [0x008A9D07+564487]\n\tOrdinal0 [0x008B82C0+623296]\n\tOrdinal0 [0x00856BDD+224221]\n\tOrdinal0 [0x00855CAC+220332]\n\tOrdinal0 [0x0085189B+202907]\n\tOrdinal0 [0x00833DF4+81396]\n\tOrdinal0 [0x00834DEE+85486]\n\tOrdinal0 [0x00834D79+85369]\n\tOrdinal0 [0x00A485DC+2262492]\n\tGetHandleVerifier [0x00CD2874+1487204]\n\tGetHandleVerifier [0x00CD23CD+1486013]\n\tGetHandleVerifier [0x00CDA368+1518680]\n\tGetHandleVerifier [0x00CD2F4E+1488958]\n\tOrdinal0 [0x00A3ED0D+2223373]\n\tOrdinal0 [0x00A4A12B+2269483]\n\tOrdinal0 [0x00A4A26F+2269807]\n\tOrdinal0 [0x00A5ECB8+2354360]\n\tBaseThreadInitThunk [0x75C6FA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77A575F4+228]\n\tRtlGetAppContainerNamedObjectPath [0x77A575C4+180]\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)\r\n\tat org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)\r\n\tat java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)\r\n\tat java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)\r\n\tat java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)\r\n\tat java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)\r\n\tat java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)\r\n\tat java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)\r\n\tat java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)\r\n\tat java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\r\n\tat java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:181)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:168)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:123)\r\n\tat com.baseClasses.Library.browserSetUp(Library.java:53)\r\n\tat com.stepDefinitions.Hook.setUp(Hook.java:27)\r\n",
+  "status": "failed"
 });
 formatter.step({
   "name": "user enters the url",
@@ -395,7 +396,7 @@ formatter.match({
   "location": "com.stepDefinitions.Crm_LoginSteps.user_enters_the_url()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "user clicks on the login button",
@@ -405,7 +406,7 @@ formatter.match({
   "location": "com.stepDefinitions.Crm_LoginSteps.user_clicks_on_the_login_button()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "user enters invalid \"sri@gmail.com\" and invalid \"Sri123\"",
@@ -415,7 +416,7 @@ formatter.match({
   "location": "com.stepDefinitions.Crm_LoginSteps.user_enters_invalid_and_invalid(java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "user clicks on the submit button",
@@ -425,7 +426,7 @@ formatter.match({
   "location": "com.stepDefinitions.Crm_LoginSteps.user_clicks_on_the_submit_button()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "invalid credentials message is displayed",
@@ -435,7 +436,7 @@ formatter.match({
   "location": "com.stepDefinitions.Crm_LoginSteps.invalid_credentials_message_is_displayed()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "close the browser",
@@ -445,10 +446,11 @@ formatter.match({
   "location": "com.stepDefinitions.Crm_LoginSteps.close_the_browser()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.after({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027PRADEEP-PC\u0027, ip: \u0027192.168.214.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_271\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)\r\n\tat com.reusableFunctions.SeleniumUtilities.to_take_screenshot(SeleniumUtilities.java:26)\r\n\tat com.stepDefinitions.Hook.tear(Hook.java:40)\r\n",
+  "status": "failed"
 });
 formatter.uri("file:src/test/resources/Features/deals.feature");
 formatter.feature({

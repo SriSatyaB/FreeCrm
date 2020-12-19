@@ -108,12 +108,12 @@
 				<div class="p-2 px-3 text-muted text-sm">Tags</div>
 					<div class="list-item attr">
 						<div class="list-body">
-							<a href="#" class="item-title _500">org.openqa.selenium.TimeoutException</a>
+							<a href="#" class="item-title _500">org.openqa.selenium.SessionNotCreatedException</a>
 							<div class="item-except text-sm text-muted h-1x">
 								1 tests
 							</div>
 							<div class="tc d-none">
-								<h5 class="mb-4">org.openqa.selenium.TimeoutException</h5>
+								<h5 class="mb-4">org.openqa.selenium.SessionNotCreatedException</h5>
 								<table class="table">
 									<thead><tr>
 										<th id="status-col"></th>
@@ -125,10 +125,10 @@
 									</tr></thead>
 									<tbody>
 	
-<tr class="s-fail" test-id="5" parent-id="1">
+<tr class="s-fail" test-id="31" parent-id="16">
 	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
-	<td class="_600">Then user clicks login btn <br/><span class="text-muted text-sm">To add one or more new calendars</span></td>
-	<td>0h 0m 30s+160msc</td>
+	<td class="_600">com.stepDefinitions.Hook.setUp() <br/><span class="text-muted text-sm">To test the crm Login Functionality for InValid User</span></td>
+	<td>0h 10m 3s+512msc</td>
 	<td></td>
 	<td>
 	</td>
@@ -137,34 +137,96 @@
 <tr class="details">
 	<td colspan="5">
 		
-		<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 30.000
+		<textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: session not created
+from timeout: Timed out receiving message from renderer: 600.000
   (Session info: chrome=87.0.4280.88)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'PRADEEP-PC', ip: '192.168.214.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Pradeep\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57471}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 1a728e2d0f87551f34f55a13a4a93c56
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00B4C0C3+3326147]
+	Ordinal0 [0x00A30851+2164817]
+	Ordinal0 [0x008B7298+619160]
+	Ordinal0 [0x008AB17F+569727]
+	Ordinal0 [0x008AA421+566305]
+	Ordinal0 [0x008AA815+567317]
+	Ordinal0 [0x008AA135+565557]
+	Ordinal0 [0x008B38B1+604337]
+	Ordinal0 [0x008AA0F1+565489]
+	Ordinal0 [0x008AAEA2+568994]
+	Ordinal0 [0x008AA421+566305]
+	Ordinal0 [0x008AA815+567317]
+	Ordinal0 [0x008AA135+565557]
+	Ordinal0 [0x008B1D2C+597292]
+	Ordinal0 [0x008AA0F1+565489]
+	Ordinal0 [0x008AAEA2+568994]
+	Ordinal0 [0x008AA421+566305]
+	Ordinal0 [0x008AA815+567317]
+	Ordinal0 [0x008AA135+565557]
+	Ordinal0 [0x008AFE62+589410]
+	Ordinal0 [0x008AA0F1+565489]
+	Ordinal0 [0x008AAEA2+568994]
+	Ordinal0 [0x008AA421+566305]
+	Ordinal0 [0x008AA815+567317]
+	Ordinal0 [0x008AA135+565557]
+	Ordinal0 [0x008AF075+585845]
+	Ordinal0 [0x008AA0F1+565489]
+	Ordinal0 [0x008AAEA2+568994]
+	Ordinal0 [0x008AA421+566305]
+	Ordinal0 [0x008AA815+567317]
+	Ordinal0 [0x008AA135+565557]
+	Ordinal0 [0x008A6776+550774]
+	Ordinal0 [0x008AA0F1+565489]
+	Ordinal0 [0x008A9F13+565011]
+	Ordinal0 [0x008A9D07+564487]
+	Ordinal0 [0x008B82C0+623296]
+	Ordinal0 [0x00856BDD+224221]
+	Ordinal0 [0x00855CAC+220332]
+	Ordinal0 [0x0085189B+202907]
+	Ordinal0 [0x00833DF4+81396]
+	Ordinal0 [0x00834DEE+85486]
+	Ordinal0 [0x00834D79+85369]
+	Ordinal0 [0x00A485DC+2262492]
+	GetHandleVerifier [0x00CD2874+1487204]
+	GetHandleVerifier [0x00CD23CD+1486013]
+	GetHandleVerifier [0x00CDA368+1518680]
+	GetHandleVerifier [0x00CD2F4E+1488958]
+	Ordinal0 [0x00A3ED0D+2223373]
+	Ordinal0 [0x00A4A12B+2269483]
+	Ordinal0 [0x00A4A26F+2269807]
+	Ordinal0 [0x00A5ECB8+2354360]
+	BaseThreadInitThunk [0x75C6FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77A575F4+228]
+	RtlGetAppContainerNamedObjectPath [0x77A575C4+180]
+
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy21.click(Unknown Source)
-	at com.pages.Crm_LoginPage.clickOnLoginBtn(Crm_LoginPage.java:34)
-	at com.stepDefinitions.Calendars_Sample.user_clicks_login_btn(Calendars_Sample.java:32)
-	at ?.user clicks login btn(file:///C:/Users/Pradeep/git/FreeCrm/FreeCrm/src/test/resources/Features/calendar_sample.feature:5)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at com.baseClasses.Library.browserSetUp(Library.java:53)
+	at com.stepDefinitions.Hook.setUp(Hook.java:27)
 </textarea>
 	</td>
 </tr>
@@ -175,12 +237,12 @@ Session ID: 1a728e2d0f87551f34f55a13a4a93c56
 					</div>
 					<div class="list-item attr">
 						<div class="list-body">
-							<a href="#" class="item-title _500">org.openqa.selenium.NoSuchElementException</a>
+							<a href="#" class="item-title _500">org.openqa.selenium.NoSuchSessionException</a>
 							<div class="item-except text-sm text-muted h-1x">
 								1 tests
 							</div>
 							<div class="tc d-none">
-								<h5 class="mb-4">org.openqa.selenium.NoSuchElementException</h5>
+								<h5 class="mb-4">org.openqa.selenium.NoSuchSessionException</h5>
 								<table class="table">
 									<thead><tr>
 										<th id="status-col"></th>
@@ -192,10 +254,10 @@ Session ID: 1a728e2d0f87551f34f55a13a4a93c56
 									</tr></thead>
 									<tbody>
 	
-<tr class="s-fail" test-id="48" parent-id="39">
+<tr class="s-fail" test-id="38" parent-id="16">
 	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
-	<td class="_600">And user fills the Deal details <br/><span class="text-muted text-sm">To create a new Deal</span></td>
-	<td>0h 0m 30s+70msc</td>
+	<td class="_600">com.stepDefinitions.Hook.tear(io.cucumber.java.Scenario) <br/><span class="text-muted text-sm">To test the crm Login Functionality for InValid User</span></td>
+	<td>0h 0m 0s+2msc</td>
 	<td></td>
 	<td>
 	</td>
@@ -203,38 +265,18 @@ Session ID: 1a728e2d0f87551f34f55a13a4a93c56
 </tr>
 <tr class="details">
 	<td colspan="5">
-		<textarea disabled class="code-block"><table class='runtime-table table-striped table'><tr><td>Title</td><td>Ammount</td><td>Commission</td><td>Stage</td></tr><tr><td>TestDeal1</td><td>4000</td><td>200</td><td>Negotiate</td></tr></table></textarea>
 		
-		
-		<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='title']"}
-  (Session info: chrome=87.0.4280.88)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+		<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'PRADEEP-PC', ip: '192.168.214.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Pradeep\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57632}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 40bc9a499359f983873dda0dcf8e7331
-*** Element info: {Using=xpath, value=//input[@name='title']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy21.sendKeys(Unknown Source)
-	at com.pages.Crm_DealsPage.enterTitle(Crm_DealsPage.java:48)
-	at com.stepDefinitions.Crm_DealsSteps.user_fills_the_Deal_details(Crm_DealsSteps.java:31)
-	at ?.user fills the Deal details(file:///C:/Users/Pradeep/git/FreeCrm/FreeCrm/src/test/resources/Features/deals.feature:12)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at com.reusableFunctions.SeleniumUtilities.to_take_screenshot(SeleniumUtilities.java:26)
+	at com.stepDefinitions.Hook.tear(Hook.java:40)
 </textarea>
 	</td>
 </tr>
@@ -262,7 +304,7 @@ Session ID: 40bc9a499359f983873dda0dcf8e7331
 						            </div>
 									<ul class="nav nav-xs flex-row no-border pull-right">
 <li><a href="#" class="b-l"><span class="badge badge-pull">ExtentReports</span></a></li>
-<li><a href="#" class="b-l"><span class="badge badge-pull">Dec 17, 2020 03:54:09 PM</span></a></li>
+<li><a href="#" class="b-l"><span class="badge badge-pull">Dec 19, 2020 07:45:29 AM</span></a></li>
 <li><a href="#" class="b-l"><span class="badge badge-pull">4.0</span></a></li>
 								    </ul>
 								</div>
